@@ -1,0 +1,33 @@
+{
+  
+  "signUp": {
+    "accountBtn": "li[id='menu-item-1237'] a[class='menu-link']",
+    "usernameField": "input#reg_username",
+    "emailField": "input#reg_email",
+    "passwordField": "input#reg_password",
+    "registerBtn":"button[name=\"register\"]",
+    "errorMessage": "div[id='content'] li:nth-child(1)"
+     
+  },
+  "login": {
+    "accountBtn": "li[id='menu-item-1237'] a[class='menu-link']",
+    "userName": "input#username" ,
+    "userPassword": "input#password",
+    "loginBtn": "button[name=\"login\"]",
+    "confirmDashboard": "li[class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--dashboard is-active'] a",
+    "invalidCredError": "div[id='content'] li:nth-child(1)"
+
+  },
+  "logout": {
+    "logoutBtn": "li[class='woocommerce-MyAccount-navigation-link woocommerce-MyAccount-navigation-link--customer-logout'] a"
+
+  },
+  "recoverPassword": {
+    "forgotPswdLink": ".guest_formText__ECKTt" ,
+    "registerEmailField": "[placeholder=\"Email`\"]",
+    "resetPswdBtn": ".button_button__PDcTb  ",
+    "successAlert": ".form-alert_alert__eOVPs "
+
+  }
+
+}
