@@ -1,7 +1,7 @@
 
 describe('SignUp Test', () => {
         
-    it('SignUp with valid credentials', () => {
+    it('SignUp with existing credentials', () => {
         cy.visit('/')
         cy.signupwithexistingcredentials()
         

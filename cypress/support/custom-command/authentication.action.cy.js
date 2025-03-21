@@ -3,7 +3,7 @@ import {faker, Faker} from '@faker-js/faker'
 let data
 
 before(() => {
-    cy.fixture('selectors').then((sel)=> {
+    cy.fixture('elements').then((sel)=> {
         data = sel
     })
 })
@@ -11,7 +11,7 @@ before(() => {
 Cypress.Commands.add('signupwithvalidcredentials', () => {
     cy.get(data.signUp.accountBtn).should('exist').and('be.visible').click()
     cy.get(data.signUp.usernameField).should('exist').and('be.visible').type(faker.person.firstName())
-    cy.get(data.signUp.emailField).should('exist').and('be.visible').type('neemtester2@gmail.com')
+    cy.get(data.signUp.emailField).should('exist').and('be.visible').type(faker.internet.email())
     cy.get(data.signUp.passwordField).should('exist').and('be.visible').type('Neem1234')
     cy.get(data.signUp.registerBtn).should('exist').and('be.visible').click()
     cy.get(data.logout.logoutBtn).should('exist').and('be.visible').click()
@@ -45,3 +45,8 @@ Cypress.Commands.add('loginwithinvalidcredentials', () => {
     cy.get(data.login.invalidCredError).contains('The password you entered for the username Tester2 is incorrect.')
     
 })
+
+
+
+
+

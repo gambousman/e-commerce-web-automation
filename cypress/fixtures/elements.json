@@ -23,11 +23,26 @@
 
   },
   "recoverPassword": {
-    "forgotPswdLink": ".guest_formText__ECKTt" ,
-    "registerEmailField": "[placeholder=\"Email`\"]",
-    "resetPswdBtn": ".button_button__PDcTb  ",
+    "forgotPswdLink": ".woocommerce-LostPassword.lost_password" ,
+    "registerEmailField": "#user_login",
+    "resetPswdBtn": "button[value='Reset password']",
     "successAlert": ".form-alert_alert__eOVPs "
 
+  },
+  "search":{
+    "storeLink": "li[id='menu-item-1227'] a[class='menu-link']",
+    "searchField": "#woocommerce-product-search-field-0",
+    "searchBtn":"button[value='Search']",
+    "confirmSearchedItem": ".product_title.entry-title"
+  },
+  "filterbycategory":{
+    "storeLink": "li[id='menu-item-1227'] a[class='menu-link']",
+    "filterField": "#product_cat",
+    "categoryTitle":".woocommerce-products-header"
+  },
+  "sorting":{
+    "storeLink": "li[id='menu-item-1227'] a[class='menu-link']",
+    "sortingField": "[name=\"orderby\"]"
   }
 
 }
