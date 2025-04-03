@@ -43,6 +43,34 @@
   "sorting":{
     "storeLink": "li[id='menu-item-1227'] a[class='menu-link']",
     "sortingField": "[name=\"orderby\"]"
+  },
+  "addToCart":{
+    "storeLink": "li[id='menu-item-1227'] a[class='menu-link']",
+    "addToCartBtn": "[data-quantity=\"1\"]",
+    "cartIcon": "a[href=\"https://askomdch.com/cart/\"]",
+    "cartItem1": ".astra-cart-drawer-content > .widget > .widget_shopping_cart_content > .woocommerce-mini-cart > :nth-child(1) > [href=\"https://askomdch.com/product/anchor-bracelet/\"]",
+    "cartItem2": ".astra-cart-drawer-content > .widget > .widget_shopping_cart_content > .woocommerce-mini-cart > :nth-child(2) > [href=\"https://askomdch.com/product/blue-denim-shorts/\"]"
+    
+  },
+  "checkout": {
+    "checkoutBtn": ".astra-cart-drawer-content > .widget > .widget_shopping_cart_content > .woocommerce-mini-cart__buttons > .checkout",
+    "firstNameField": "#billing_first_name",
+    "lastNameField": "#billing_last_name",
+    "billingCompanyField": "#billing_company",
+    "selectCountryDropdown":"#select2-billing_country-container",
+    "billing_country":"#select2-billing_country-result-7tar-NG",
+    "searchCountryField":".select2-search__field",
+    "addressField": "#billing_address_1",
+    "cityField": "#billing_city",
+    "selectStateDropdown":"#select2-billing_state-container",
+    "searchStateField":".select2-search__field",
+    "emailField": "#billing_email",
+    "placeOrderButton": "#place_order",
+    "orderDetailsTitle": ".woocommerce-notice"
+  },
+  "orderManagement": {
+    "orderbtn": "a[href=\"https://askomdch.com/account/orders/\"]",
+    "orderTable": "table"
   }
 
 }

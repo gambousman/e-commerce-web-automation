@@ -6,6 +6,7 @@
           import './custom-command/filterProductByCategory.actions.cy'
           import './custom-command/productSearch.action.cy'
           import './custom-command/sortingProduct.action.cy'
+          import './custom-command/purchaseFlow.actions.cy'
           before(() => {
             Cypress.on('uncaught:exception', () => {
                     return false

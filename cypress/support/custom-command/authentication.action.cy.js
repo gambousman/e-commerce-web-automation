@@ -30,7 +30,7 @@ Cypress.Commands.add('signupwithexistingcredentials', () => {
 
 Cypress.Commands.add('loginwithvalidcredentials', () => {
     cy.get(data.login.accountBtn).should('exist').and('be.visible').click()
-    cy.get(data.login.userName).should('exist').and('be.visible').type('Tester2')
+    cy.get(data.login.userName).should('exist').and('be.visible').type('TesterNeem')
     cy.get(data.login.userPassword).should('exist').and('be.visible').type('Neem1234')
     cy.get(data.login.loginBtn).should('exist').and('be.visible').click()
     cy.get(data.login.confirmDashboard).contains('Dashboard')
